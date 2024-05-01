@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f3e0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 15px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #062df4;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+body.home nav ul li.home a {
+    color: #FFD700;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+
+
+main {
+    padding: 20px;
+}
+main24 {
+  padding: 24px;
+  text-align: center;
+}
+#banner {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#banner p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+}
+
+buttonbody {
+  text-align: center;
+  margin-top: 50px;
+}
+
+buttonbody a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+
+section {
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+t3 {
+  font-size: 12px;
+  opacity: 50%;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa); 
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {  
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear; 
+    }
+  }
+
+  .container {
+    display: flex;      /* Use flexbox to manage the layout */
+    height: 100vh;      /* Full view height */
+}
+
+.left-section {
+    flex: 60%;          /* 60% of the container */
+    background-color: #f8f9fa; /* Light gray background for visibility */
+    padding: 20px;      /* Some padding around the content */
+}
+
+.right-section {
+    flex: 40%;          /* 40% of the container */
+    background-color: #dee2e6; /* Slightly darker gray for contrast */
+    padding: 20px;
+}
+.logo2 img {
+    width: fit-content;
+    height: 700px;
+    margin-right: 20px;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo2:hover {
+    filter: drop-shadow(0 0 2em #646cffaa); 
+  }
+  
+  @keyframes logo2-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {  
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo2 {
+    animation: logo-spin infinite 20s linear;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo2 {
+      animation: logo-spin infinite 20s linear; 
+    }
+  }
+
+  .boxxed {
+    margin: 20px auto; /* Centers the box and adds some margin around it */
+    padding: 20px; /* Adds padding inside the box for some space around the text */
+    max-width: 800px; /* Maximum width of the box */
+    background-color: #f9f9f9; /* Light grey background for the box */
+    border: 1px solid #ccc; /* Light grey border around the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for some depth */
+    font-family: Arial, sans-serif; /* Optional: Sets the font for the content */
+}
+
+.boxxed h2 {
+    color: #333; /* Dark grey color for the heading */
+}
+
+.boxxed p {
+    color: #666; /* Medium grey color for the paragraph */
+    line-height: 1.6; /* Increases line height for better readability */
+}

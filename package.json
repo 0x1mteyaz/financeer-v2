@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@clerk/clerk-js": "^5.0.0",
+    "axios": "^1.6.8",
+    "bootstrap": "5.2.3",
+    "chart.js": "^4.4.2",
+    "openai": "^4.38.3",
+    "php": "^1.0.2",
+    "pip": "^0.0.1",
+    "python": "^0.0.4"
+  }
+}

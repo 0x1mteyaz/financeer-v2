@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Username</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<header>  
+  <h1>Financeer</h1>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="forum.html">Forum</a></li>
+      </ul>
+  </nav>
+</header>
+<body>
+  <div class="container">
+    <h2>Enter Username</h2>
+    <form onsubmit="setUsername(); return false;">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" required><br />
+      <input type="submit" value="Accept">
+    </form>
+  </div>
+  <footer>
+    <p>We are not responsible for any financial losses.</p>
+  </footer>
+
+  <script>
+    function setUsername() {
+      const username = document.getElementById('username').value.trim();
+      if (username) {
+        localStorage.setItem('forumUsername', username);
+        window.location.href = 'forum.html'; // Assuming you redirect to a forum page
+      } else {
+        alert('Please enter a username.');
+      }
+    }
+  </script>
+</body>
+</html>

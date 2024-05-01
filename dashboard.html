@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+    <h1>Financeer</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main24>
+    <h1>Welcome...</h1>
+    <p4>Press any button below to navigate to the different tabs.</p4>
+</main24>
+<div class="tabs">
+  <input type="radio" name="tab" id="tab1" checked>
+  <label for="tab1">Earnings</label>
+  
+  <input type="radio" name="tab" id="tab2">
+  <label for="tab2">Outgoings</label>
+
+  <input type="radio" name="tab" id="tab3">
+  <label for="tab3">Overview</label>
+
+  <div class="tab-content" id="content1">
+    <h2>Welcome to your income page</h2>
+    <p>Enter in details below about your income. Remember, there's no shame in it!
+        <br>Try and be as specific as you can as to where they are sourced from.
+    </p> 
+    <form id="incomeForm">
+        <label for="incomeName">Income Name:</label>
+        <input type="text" id="incomeName" required>
+        <label for="incomeAmount">Income Amount:</label>
+        <input type="number" id="incomeAmount" required>
+        <label for="incomeFrequency">Income Frequency:</label>
+        <select id="incomeFrequency" required>
+            <option value="annually">Annually</option>
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="one-off">Once</option>
+        </select>
+        <button type="submit">Add Income</button>
+        </form>
+        <div id="incomeList"></div>
+        <script src="scripts/income.js"></script>
+        <br>
+        <h2>Your Earnings</h2>
+        
+  <div class="table-container">
+    <table id="incomeTable">
+      <thead>
+        <tr>
+          <th>Income Name</th>
+          <th>Income Amount</th>
+          <th>Income Frequency</th>
+        </tr>
+      </thead>
+      <tbody id="incomeTableBody"></tbody>
+    </table>
+  </div>
+  </div>
+
+  <div class="tab-content" id="content2">
+    <h2>Welcome to your outgoing page</h2>
+    <p>Enter in details below about your outgoings. Remember, it's important to keep track of your expenses!
+      <br>Be specific about where your money is going to.
+    </p>
+    <form id="outgoingForm">
+      <label for="outgoingName">Outgoing Name:</label>
+      <input type="text" id="outgoingName" required>
+      <label for="outgoingAmount">Outgoing Amount:</label>
+      <input type="number" id="outgoingAmount" required>
+      <label for="outgoingFrequency">Outgoing Frequency:</label>
+      <select id="outgoingFrequency" required>
+        <option value="monthly">Monthly</option>
+        <option value="annually">Annually</option>
+        <option value="weekly">Weekly</option>
+        <option value="one-off">Once</option>
+      </select>
+      <button type="submit">Add Outgoing</button>
+    </form>
+    <div id="outgoingList"></div>
+    <script src="scripts/outgoings.js"></script>
+    <br>
+    <h2>Your Expenses</h2>
+  
+    <div class="table-container">
+      <table id="outgoingTable">
+        <thead>
+          <tr>
+            <th>Outgoing Name</th>
+            <th>Outgoing Amount</th>
+            <th>Outgoing Frequency</th>
+          </tr>
+        </thead>
+        <tbody id="outgoingTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tab-content" id="content3">
+    <h2>Overview</h2>
+    <p>Time to review everything. Below you'll find a button to add your goals that will allow
+        <br> you to display your goals. Use the other tabs to input your earnings and your outgoings and come back when you are done.
+        <br> This page will also display graphs to show you everything.
+    </p>
+    
+    <div class="main-container">
+        <div class="pie-chart">
+            <h2>Income Distribution</h2><br>
+            <canvas id="incomeChart"></canvas>
+            <h2>Outgoings Distribution</h2>
+            <canvas id="outgoingsChart"></canvas>
+        </div>
+        <div class="net-value-container">
+            <h2>Net Value</h2>
+            <p id="netValue">Calculating...</p>
+        </div>
+    </div>
+    <script src="scripts/piechart_overall.js"></script>
+    <script src="scripts/total_overall.js"></script>
+    <div class="card-controls">
+
+    </div>
+    <div class="expandable-container">
+        <button id="expandButton">Add Goal</button>
+        <form id="goalForm" class="hidden">
+            <input type="text" id="goalName" placeholder="Enter goal name" required>
+            <input type="number" id="goalAmount" placeholder="Amount" required>
+            <button type="submit">Save Goal</button>
+        </form>
+        <script src="scripts/goal.js"></script>
+    </div>
+  </div>
+
+
+</div>
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 // Set your OpenAI API key
-const apiKey = 'sk-proj-UrTrEPsjiYRGZy9yguYuT3BlbkFJrI7VUey1YyKsY02Mqstf';
+const apiKey = 's';
 
 // Set up Axios instance with your API key
 const instance = axios.create({
